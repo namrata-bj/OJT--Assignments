@@ -1,54 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-<h3>Example 01:Student Details</h3>
- <table border cellspacing="0" cellpadding="9">
-<thead>
-<tr>
-<th>Roll no</th>
- <th>Student name</th>
-<th>Course</th>
-<th>Marks</th>
-</tr>
-</thead>
-<tbody>
- <tr>
-<td>1</td>
- <td>Amit</td>
-<td>Python</td>
-<td>85</td>
- </tr>
-<tr>
-<td>2</td>
- <td>Neha</td>
- <td>Java</td>
-<td>78</td>
-</tr>
-<tr> <td>3</td>
- <td>Rohan</td>
-<td>Web developement</td>
-<td>92</td>
- </tr>
+ <h1>Student Registration Form</h1>
+<form>
+ <table>
   <tr>
-<td>4</td>
-<td>Priya</td>
-<td>Data Science</td>
-<td>88</td>
+ <td>
+ <label for="firstname">First Name:</label>
+ <input type="text" id="firstname" />
+</td>
+<td>
+ <label for="lastname">Last Name:</label>
+ <input type="text" id="lastname">
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2">
+  <label for="email">Email:</label>
+<input type="email" id="email" size="47">
+ </td>
 </tr>
 <tr>
-<td>5</td>
- <td>Kunal</td>
- <td>Python</td>
- <td>74</td>
+<td colspan="2">
+  <label for="mobile">Mobile Number:</label>
+  <input type="tel" id="mobile" size="4">
+  </td>
+ </tr>
+
+  <tr>
+ <td colspan="2">
+  <label for="password">Password:</label>
+
+ <input type="password" id="password" size="47">
+</td>
 </tr>
-</tbody>
-</table>
-</div>
+
+<tr>
+  <td colspan="2">
+ <label for="gender">Gender:</label>
+<input type="radio" name="gender" /> Male
+ <input type="radio" name="gender" /> Female
+<input type="radio" name="gender" /> Other
+</td>
+</tr>
+<tr>
+ <td colspan="2">
+  <label for="course">Course:</label>
+ <select id="course">
+<option>Select Course</option>
+<option value="html/css">HTML/CSS</option>
+<option value="java">Java</option>
+<option value="python">Python</option>
+ </select>
+  </td>
+</tr>
+ <tr>
+<td colspan="2">
+<label for="qualification">Qualification:</label>
+<select id="qualification">
+<option>Select Qualification</option>
+<option value=" ">10th</option>
+<option value=" ">12th</option>
+<option value=" ">graduate</option>
+ </select>
+</td>
+ </tr>
+ <tr>
+<td colspan="2">    
+  <label for="address">Address:</label>
+  <br>
+  <textarea rows="4" cols="47" id="address"></textarea>
+  </td>
+  </tr>
+<tr>
+<td colspan="2">
+ <label for="dob">DOB:</label>
+   <input type="date" id="dob" />
+     </td>
+     </tr>
+     <tr>
+      <td>
+    <button type="reset">Reset</button>
+     </td>
+    <td>
+  <button type="submit">Submit</button>
+    </td>
+    </tr>
+ </table>
+    </form>
+
 </body>
 </html>

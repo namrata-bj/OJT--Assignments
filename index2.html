@@ -4,63 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-<div>
-<h3>Example 03</h3>
-<table border cellspacing="0" cellpadding="4">
-<thead>
-   <tr>
-<th>Day / Period</th>
-<th>I<br>9:30-10:20</th> <th>II<br>10:20-11:10</th>
- <th>III<br>11:10-12:00</th>
- <th>IV<br>12:00-12:50</th>
- <th>V<br>1:30-2:20</th>
-<th>VI<br>2:20-3:10</th>
+    <h2>Example 03: Job Application Form</h2>
+<form>
+<table>
+<tr>
+<td>    
+<label for="name">Full Name:</label></td>
+<td>
+<input type="text" id="name"></td>
 </tr>
 <tr>
- <th>Monday</th>
- <td>HTML</td>
- <td>CSS</td>
-<td>JavaScript</td>
-<td rowspan="5" style="text-align:center;vertical-align:middle;">Lunch</td>
-<td>Python</td>
- <td>Database</td>
+<td>
+ <label for="email">Email:</label>
+ </td>
+ <td>
+ <input type="email" id="email">
+ </td>
 </tr>
 <tr>
-<th>Tuesday</th>
-<td>Python</td>
-<td>Java</td>
-<td>Web Design</td>
-<td>HTML</td>
- <td>Lab</td>
+<td>
+ <label for="mobile">Mobile Number:</label>
+</td>
+<td>
+<input type="tel" id="mobile">
+</td>
+</tr>
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input type="password" id="password"></td>
+</tr>
+<tr>
+<td>
+ <label>Gender:</label></td>
+<td>
+ <input type="radio" id="male" name="gender"> Male
+<input type="radio" id="female" name="gender"> Female
+<input type="radio" id="other" name="gender"> Other
+</td>
+</tr>
+<tr>
+ <td>
+<label for="position">Position:</label></td>
+<td>
+<select id="position">
+ <option>Select Position</option>
+<option>Web Developer</option>
+<option>Software Developer</option>
+<option>Data Analyst</option>
+ </select>
+</td>
+</tr>
+<tr>
+<td>
+ <label>Skills:</label></td>
+<td>
+<input type="checkbox" id="python"> Python
+<input type="checkbox" id="java"> Java
+<input type="checkbox" id="html"> HTML/CSS
+<input type="checkbox" id="javascript"> JavaScript
+</td>
+</tr>
+<tr>
+ <td><label>Experience:</label></td>
+ <td>
+ <input type="radio" id="fresher" name="experience"> Fresher
+ <input type="radio" id="one" name="experience"> 1-2 Years
+ <input type="radio" id="three" name="experience"> 3+ Years
+ </td>
 </tr>
 
 <tr>
-    <th>Wednesday</th>
-    <td>CSS</td>
-    <td>Python</td>
-    <td>JavaScript</td>
-    <td>Database</td>
-    <td>Lab</td>
+<td><label for="address">Address:</label></td>
+<td><textarea id="address" rows="5" cols="40"></textarea></td>
 </tr>
 
 <tr>
-    <th>Thursday</th>
-    <td>Java</td>
-    <td>HTML</td>
-    <td>Python</td>
-    <td>JavaScript</td>
-    <td>Web Design</td>
+<td>
+<label for="resume">Resume:</label></td>
+<td>
+ <input type="file" id="resume"></td>
 </tr>
 <tr>
-    <th>Friday</th>
-    <td>Database</td>
-    <td>CSS</td>
-    <td>HTML</td>
-    <td>Python</td>
-    <td>Project</td>
+    <td> <input type="reset" value="Reset">
+ <input type="submit" value="Apply">
+</td>
 </tr>
+</table>
+
+</form>
 </body>
 </html>

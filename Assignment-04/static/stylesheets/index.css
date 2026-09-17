@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+ul {
+
+    list-style-type:none;
+    padding: 0px;
+}
+li {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main span{
+    background-color:gainsboro;
+    padding: 6px;
+    font-size: 14px;
+}
+input{
+    width:400px;
+}
